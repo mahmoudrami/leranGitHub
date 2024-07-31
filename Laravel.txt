@@ -1,0 +1,27 @@
+ي سيدي العزيز بدي اعيد لارافيل 
+الرابط في لارافيل أنواع انا بدي احكي مباشرة كيف بكتب الرابط ب لارافيل من ال web to controller
+Route::get('index','FrontController@index')
+Route::ge('index',[FrontController::class,'index'])
+هدول شكلين المصفوفة الأول هو اسم ل كلاس الثاني هو اسم الدالة و الأول نفس الاشي بس في اشي ضمن ي بصير بقسم من عند ال@ اسم الفنكشن expload($name,'@')
+بس لازم اعمل استدعاء ل الكنتروولر عشان م يصير في ايروور 
+use App/Http/Controllers/FrontController
+ويفضل انك تستخدم الرابط الثاني الحديث افضل أبو المصفوفة 
+الكنترول الاشي الأساسي الي لازم يكون فيه الي هو 
+namespace هاد عشان يعرف انك انشات دالة داخل كلاس زي كانو بعرفك انو هاد المكان الصح وبعرك انو مسارك ل هان وبنكتب ل عند الكنترول بتسلسل صحيح ونصيحة اعتبر حالك بتشتعل على سيرفر عشان م يصير عند ايرور ل قدام لانو الحروف حساسة 
+namespace App/http/Controllers هي المسار الصحيح الي لازم يكون فيه 
+يفضل انو يكون اسم الرابط واسم الدالة و الصفحة واحد 
+نصيحة تعلم الاختصارات اشي فاقد وبسهل عليك كل اشي ب الشغل رسمياااا انا راح اعتمد الاختصارات 
+Controller type
+empty controller
+resource controller
+resource Api controller
+Invoke Controller دالة وحدة فقط 
+
+Route::resource('prodect',ProdectController::class)
+هاد زي كانك اعمل الروابط ال  عرض إضافة حذف تعديل
+انشاء كنترولر عادي 
+php artisan make:controller name
+php artisan make:controller name -r هادي ل resource
+php artisan make:controller name -resource --api
+
+
