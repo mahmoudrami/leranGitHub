@@ -1,0 +1,28 @@
+طريقة رفع مشروع لارافيل على القيت هب
+بنشا الريبو من المشروع اسم الريبو نفس اسم المشروع 
+اول امر بستخدمو ولمرة واتحدة هو git init
+هاد بنشا ملف فارغ اسم .git محتواه الملفات الي بترتفع 
+بصير جنب كل اسم ملف حرف u mainthat untrackt
+git add * yes or . onl
+y  بصير في جنب اسم الملف حرف A
+git commit -m "the same git"
+git branch -M main فقط اول مرة 
+عشان يغير ال master to main
+
+git remote add origin link
+هاد عشان يربط الكزد الي معي مع قيت هب وبس مرة وحدة بستخدم 
+git push -u origin main  هاد كل مرة بنستخدمو \
+كل اخر محاضرة اعمل ال 3 اوامر هدول 
+git add * 
+git commit -m ""
+git push origin main 
+اذا بدي انزل المشروع عندي باخجد رابط المشروع طبيعي وبعمل امر 
+git clone link
+اول م انزلو واشغل الت\بيق بعطيني ايرور
+في 3 اخطاء بيكون بسبب تجاهل ملفات الاتية .env  vendor
+
+حل مشكلة ملف ال  vendor بعمل composer install
+لحل مشكلة ال .env  بعمل نسخ لصق ل ملف الانف الي موجود افضل \ريقة 
+لحل اخر مكشلة بعمل laravel artisan key:generate
+وعشان اجيب اي تعديل بصير بعمل امر 
+git pull origin 

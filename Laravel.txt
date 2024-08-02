@@ -23,5 +23,8 @@ Route::resource('prodect',ProdectController::class)
 php artisan make:controller name
 php artisan make:controller name -r هادي ل resource
 php artisan make:controller name -resource --api
+use : بتستخد عشان تستعدي كلاس تستخدمو ب الامكان الي بدك اياه 
+namespace : عشان تعرف ل كلاس  اذا كنترولر مثلا App\htpp\Controllers
+
 
 
