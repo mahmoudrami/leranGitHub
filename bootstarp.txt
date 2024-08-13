@@ -1,4 +1,5 @@
 container عشان يخلي المحتوى في النص 
+text-center بخلي الكلام في النص 
 my مارجن من فوق ومن تحت
 mx مارجن من يمين ومن شمال 
 mt مارجن توب 
@@ -11,6 +12,29 @@ btn-success هاد بعمل شكل الزر بلون اخضر
 alert عشان يبين زي اشي طالع 
 alert-success بخليه اخضر 
 form-select هاد عشان يضيف سهم اخر اشي عشان يبين انو دروب داون 
+table هاد بيعملك شكل جدول لحالو 
+tabel-bordered 
+table-hover كل اشي من اسم وببين 
+table-striped
+table-dark هاد بيعمل انو الخلفية سودا وتنسيق 
+badge بعمل زي بطاقة 
+bg خلفية 
+عندي ال bootstarp بقسم الشاشة ل 12 عمود ف عشان انضم اشي حلو بعمل
+div class="row" ends جواه 
+div class="col-numberCol" ends
+ d-inline بخلي العنصر انلاين  display-inline
+d-flex خلي العناصر جنب بعض 
+justify-content-between خلي المساحة المتبقية بينهم 
+
+--------------------fontaosam----------------------
+-----------------------------------------------------
+fas  solid  ايقونة ممتلئ
+far  regular ايقونة مفرغة 
+fad  brand الشركات 
+fa-nameicon
+<i class="fas fa-heart><i>
+اذا بدي ايقونة فيسبوك الرسمية بكتب الاسم وداش وكلمة square
+واذا حرف الا f لحال بعمل -f
  
 
 

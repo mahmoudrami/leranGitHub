@@ -1,0 +1,13 @@
+ onclick = return confrim('Are you sure!!') رسالة تنبيه حلوة بتجيك فوق من سوق الجمعة 
+onclick="functionname(if sendevent write event)"
+jquery cdn بنحطو اخر اشي فوق
+setTimeout دالة بتنفذ محتواها بعد الفترة الي بتحددها
+عشان اختار العنصر الي بدي اياه بعمل التالي 
+('namecalss.')  OR $('#nameId')$
+fadeOut() ends هادي بتخفي العنصر 
+في رسائل بتظهر من خلال جافا سكربت اسمها sweetalert2.com هي اسمها و موقعها 
+كل الاكواد الي بتجيبهم من برا هان رابطهم اولاول اول اشي 
+target بجيب عنصر ال html الي ضغطت عليه 
+parentElement بجيب اب العنصر الي ضغطت عليه او الي بعتلو الحدث 
+closest('form') هادي انو وين م يضغط هاتلي الفورم   submit() ends  زي كاني بقلو ارسل الفةرم من JS
+toast فكرة alert حلوة جداا 
