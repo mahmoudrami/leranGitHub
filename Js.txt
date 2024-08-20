@@ -11,3 +11,24 @@ target بجيب عنصر ال html الي ضغطت عليه
 parentElement بجيب اب العنصر الي ضغطت عليه او الي بعتلو الحدث 
 closest('form') هادي انو وين م يضغط هاتلي الفورم   submit() ends  زي كاني بقلو ارسل الفةرم من JS
 toast فكرة alert حلوة جداا 
+
+('.forclass'.).val() ends$ بجيب القيمة الي موجودة 
+('.forclass'.).val('') ends$  بخليها فاضية واذا بدي عن طريق ال id بعمل بدل النقطة سلم 
+('#nameid').drop('disable', true)$ انو خلي البربرتي فولس  
+.keyup انو بس يزيد الطول عندي مثلا لما اكتب اشي 
+زblur انو بس يخلص كتابة ويطلع ل برا  
+طريقة عمل ال اجاكس 
+ajax({ end
+	url: '{{route("nameroute")}}' ,end
+	type:'method type' ,ends
+	اذا كان ال method post ببعت ال csrf بططريقة ال token_
+	data:{ ends
+token_:'{{ csrf_token() }}' end
+	password: $('current').val() ends
+} 
+end}) ,success:function(res){console.log(555)}}
+
+onsubmit بس ترسل الفورم 
+preventDefault بتمنع الحدث انو يثوم ب الاشي الافتراضي الي معاه 
+
+في اشي اسمو axios http كويسة اقرا شوية عنها 
