@@ -1,6 +1,7 @@
 document.write(element) هان بنشا عنصر 
 typeof() ends هادي بترجع نوع البيانات 
-
+console.log(`the price is ${price || 200}`) اطبعلي السعر اذا كان موجود اما اذا كان مش معروف او نل او صفر اطبعلي ال 200 
+console.log(`the price is ${price ?? 200}`) بترجع ال 200 بس اذا كانت مشمعروف او نلل
   ميثووود خواص الارقام 
 toString()ends بترجع نص من الرقم الي عندي بتحولو يعني
 toFixed(count)ends  بحدد اكم من رقم بعد الفاصلة العشرية من 5 او اكثر بتقرب  وبترجع نص 
@@ -8,25 +9,122 @@ parseInt(number) بتحول النص ل رقم صحيح
 parseFloat(number) بتحول النص ل رقم عشري
 isInteger(var) بفحص الي جوا هل رقم صحيح 
 isNan(var) بفحص هل هو رقم عشري ولا صحيح 
-
+------------------------------------------------------------------------------
 ميثوووود النصوص
-varName[0] الحرف الاول 
-charAt(index) 
+varName[0] الحرف الاول لو حطيت اشي مش موجود رقم اندكس يعني بترجع غيرمعروف 
+charAt(index) برجع الحرف الي في المكان الي بتبعتو  اذا بعتت اشي مش موجود بترجع فاضية 
+length  بتعطيني عدد الحروف 
+trim()ends بتشيل المسافات من اول ونهاية النص الي ملهمش لازمة 
+toUpperCase() بترجع الحروف كلها كبيرة
+toLowerCase() بترجع الحروف كلها صغيرة 
+indexOf(valuechar) بتعطبه مثلا حرف وببحث عنه اذا موجود برجع مكانو واذا لا برجع -1
+slice(start, end not include)
+repeat(count) بتكرر الاشي حسب العدد الي كتبتو 
+split()ends بترجع النص ك مصفوفة اذا فاضية النص بكون عنصر واحد جواها بس 
+split('')ends المكان الي بدك اياه يقصص منو اذا فاضية نص هيك بدون اشي بقصقص لحروف ل مصفوفة اذا سبيس بقص من عند السبيس  
+split('', limit) ends اذا اعطيتو المتغير الثاني بقص حسب الرقم الي اعطيتو اياه يعني بقصص عدد كلمات او احرف وبشيل الثاني خلص 
+substring(start, end) فش فيها سالب 
+substr(start, count optional) هادي بتعطيها من وين يبدا والثاني بتقلها اكم من حرف خد 
+includes(value, position optional ) بتسال هل الفاليو موجودة ب النص  المتغير الثاني انو يبدا ممن وين يبحث اختياري
+startwiths(value, position optional) بتسالو هل النص بتبدا ب الفاليو  المتغير الثاني من وين يبدا برضو واختياري
+endwiths(value , lenght optional) بتسالو  هل النص بينتهي ب الفاليو بس المتغير الثاني هاد بتسالو هل الطول هاد بينتهي بحرف هاد 
+
+--------------------------------------------Array------------------------------
+let x = ['mahmoud','rami']
+x[0] = 'love'ends هيك بتعدل على العنصر الاول 
+x[0][3] هيك بترجع حرف ال m من العنصر الاول 
+Array.isArray(varArrayName) اذا كانت مصفوفة برجع ترو 
+اذا ققرت تضيف على مصفوفة وكانت الانكدس مثلا اطول منها برجع الي طولها الاصلي وبحط ل حد العنصر الي بدك تضيفو فاضي 
+x[3]='aqel هيك حتصير ['mahmoud','rami',empty,'aqel']
+x.lenght هادي بترجع عدد العناصر 
+x.lenght = 2 هيك انت بتحدد طول المصفوفة قديش يكون
+x.unshift(elements) هادي بتضيف العناصر في بدايمة المصفوفة 
+x.push(elements) بتضيف العناصر في نهاية المصفوفة 
+x.shift()ends بتحذف اول عنصر من المصفوفة وبترجع العنصر الي حذفو 
+x.pop()ends بتحذف اخر عنصر من المصفوفة وبترجع العنصر الي حذفو 
+x.indexOf('search element', position start search optional) اذا العنصر موجود بترجع موقعو من المصفوفة
+x.lastIndexOf('search element', position start search optional) بتبدا تبحث من الاخر للاول واذا لقتو بتجيب موقعو من الاول طبيعي
+x.include(value) هل المصفوفة تحتوي على 
+x.sort()ends بتعامل بترتيب ابجدي يعني لو عندي 10 30 20 1000 راح يرتب كتالي 10 1000 20 30  ال 1 قبل ال 2 عشان هيك 	
+x.reverse() ends بتعكس المصفوفة 
+x.slice()ends برجع المصفوفة نفسها 
+x.slice(start, end not include)ends برجع المصفوفة نفسها  هادي بتعدلش على نفس المصفوفة 
+x.splice(start, deletecount,elements insert) اول اشي البداية اجباري مطلوب الثاني اكم من عنصر بدك تحذف الثالث اذا بدك تضيف اشي اذا كان بداية صفر بضيف بداية 
+x.concat(var2array,..,..,..,item ) بدمج مصفوفتين 
+x.join()ends هيك بترجع عناصر المصفوفة ك نص مفصول بين العناصر بفاصلة اذا بدي اميز الفصل بحطو بين القوسين 
+x.map(element func, index op, arr op) ends بتنشا مصفوفة جديدة كليا اول اشي فنكشن كل عنصر من مصفوفة انت مستعدي الماب الها الثاني الانكدس تبع العنصر الي معك الثالث اسم المصفوفة 
+ممكن اني اكون عامل فنكشن وبدي استخدمها بعمل التالي 
+x.map(function(element){block of code }) يعني هادي بترجعلي التطبيق الي انت اعهملتو بس 
+x.map(nameFunction ) هيك بطبق الفنشكن على المتغير الي عندي 
+x.filter(function(ele){block of code }) نفس فكرة ال map بتمشي ع كل عنصر وبتنشا مصفوفة جديدة بس بترجع العناصر الرجعت من الشرط true بس بس يعني المصفوفة لجديدة بس الي حققت الشرط بس بس ركزز هان 
+x.reduce(function(acc first element in arr, current, index of current element, arr){},acc) هادي بتضل تجمع عناصر المصفوفة وبترجع المجموع الكلي 
+الحين شو الفرق بين ال acc الاول و الثاني الاول هو اذا مكانش العنصر الثاني موجود بكون العنصر الاول من المصفوفة بس اذا كان موجود بكون الثاني وبكون هو اصلاااناتج اول مرة من المصفوفة هو فعليا
+اذا الثاني مش موجود بكون قيمتو صفر الصح هيك نحكيها وهادي بتزبط للكل مش بس للاراقام يعني مثلا بقارن نصوص مثلا وبرجع اشي معين بحذف العنصرين ال acc , current وبحط المرج بداله 
 
 
 
+------------------------------------functions ----------------------------------------------
+function name(var){} ends هيك اذا بدي ابعت اسم المتغير 
+function name(...namevar)(){} ends هادي اذا مش عارف عدد المتغيرات الي عندي تعتبر مصفوفة من ال argument 
+let name = function(){return } annoymes function دالة بدون اسم وومكن احط الاسم بس ملوش لازمة بستخدمها من خلال المتغير 
+let name = (e) => {block of code}
+map(function(e){return e}) هادي بترجع العنصر عنصر مثلاااا نص اذا استخدمت الماب ل النص بمسك حرف حرف 
+--------------------------------------------
+for and while adnd do while زي اللغات الثانية ب الزبط 
+-----------------------------------forEach------------
+تعتير اصللا من ال array 
+x.forEach(function(ele){})
 
+-----------------------------------------------------------object ------------------
+include proprties and methods 
+let nameObject = {thename:'mahmoud', nameFunction: function(){block of code }} انا هيك انشا اوبجكت وفيه خصائص الاسم مثلا 
+nameObject.anyFunctionInObject    and  nameOfObject.[anyFunctionInObject]  هيك بوصل لكل العناصر الي جوا الاوبجكت 
+add new prop 
+user.age = 13  or user['age']=12 
+user.sayhello = function(){return 'hello'}
+let user = {}   or let user = new Object() ends if you sent date in 
+let x = Object.create({})ends بتقبلؤاوبجكت جواها واذا فاضي عادي اوبجكت فاضي 
+let newobj = Object.create(oldobj) هيك بنشا الاوبجكت بسس فاضي بس بتقدر توصل ل عناصر ليش لانو بكون ارتبط لجديد ب القديم قصدي العنوان حسب فهمي ل جافا عاش بس في اشي بسيط اختلاف 
+newobj.h=66 مثلا بنشا الو انو h =66 بعنصر مستقل لحالو بس يخال افتح الوبجكت بتلاقي اشي جواه افتحو بتلاقي رقم القديم موجود ولو بدي استخدم بفنكشن بستخدم القديم عشان احل المكشلة كلمة this ويس
+let newobj = Object.assign(targrtobject,anotherobject or prop) هادي بضيف الي بعد التارجيت ل التارجيب وبعديين بسندها ل الاوبجكت لجديد
 
-
-
-
-
-
+this بتعود على مالك الفنكشن اذا استدعيتها عن طريق اشي من الايدي تو كلاس مثلا 
+اما لو استدعيتها من الشاشة مباشرة بتعود على ال window 
+this in object refernce the object  بتعود على الاوبجكت 
 
 
 document.createElement() ends هادي بتنشالي عنصر 
 
-
-
 ----------------------------------------------------------
 window.close() ends  هادي هيك بسكر الصفحة 
+--------------------------------------------------------DOM document object model-------------------------------------------------
+document.getElementById('id') هادي بجيب العنصر حسب ال id
+document.getElementsByTagName('tag name') هادي بتجيب كل العناصر الي اله اسم التاق
+document.getElementsByClassName('class name') بتجيب كل العناصر الي الها هاد لكلاس
+document.querySelector('#by id .by class or tagName') بترجع العنصر حسب م بعتت بس اذا كان في كلاس او تاق نيم برجع اول واحد بس اذا بدي كلهم الي تحت الها 
+document.querySelectorAll(the same up)
+document.title برجعلك عنوان الصفحة
+document.bady برجعلك مكونات الصفحة
+document.forms بترجع الفورمات الي بالصفحة 
+document.links بترجع الروابط الي بالصفحة  
+document.images بترجع الصور الي بصفحة 
+innerHTML بترجع المحتوى الي جوا زي مهو html
+textContent بترجع المحتوى النصي الي جواا text just 
+عشان اغير اشي ب js بععمل يساوي مثلا 
+innerHTML = <h1>mahmoud</h1> ends بغير ال html الي جوا ل الي بعتو هان 
+textContent = 'mahmoud' بغير النص داخلي ل محمود بس النص 
+مثلا عشان اوصل ل attr in element بعمل التالي دشرح بشكل عام ع الصور
+document.images[0].src = 'path' هيك بغيرال سورس عني اذا بدي اول ل attr جوا اشي زي الاوبجكت من خلال ال .
+واذا كتبت attr مش موجودة واسندت قيمة بضيفها تعامل زي الاوبجكت عشان اضيف كلاس ele.className=nameclass عشان ال id  بعمل ele.id = id
+getAttribute('nameAttr') بتجيب اتربيوب
+setAttribute('nameAttr','valueAttr')
+attributes قائمة بجميعهم بترجع 
+hasAttribute('attrName') لو موجودة برجع ترو 
+removeAttribute('arrtName') بتزيل الاتربيوت 
+hasAttributes()ends هل في اي اتؤبيوت اذا اه رجع ترو
+
+
+
+
+
+
