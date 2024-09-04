@@ -418,7 +418,8 @@ import هادي بحطها عند الملف الي بدي استقبل فيه i
 
 
 
-
+------------- css for me ----------------
+backgroiund: linear-graditent=(colors)
 
 
 
