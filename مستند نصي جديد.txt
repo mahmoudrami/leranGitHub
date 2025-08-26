@@ -1,0 +1,17 @@
+
+composer require fabpot/goutte ويب سكرابينغ
+
+
+
+
+
+
+
+
+
+
+
+
+composer require symfony/http-client
+
+ 
